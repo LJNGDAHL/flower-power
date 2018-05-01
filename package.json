@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "tessel run index.js"
+    "start": "tessel run index.js",
+    "push": "tessel push index.js",
+    "stop": "tessel stop"
   },
   "private": true,
   "author": "",
