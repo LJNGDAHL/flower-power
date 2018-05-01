@@ -9,6 +9,8 @@ var speaker = gpio.pin['G4']
 
 setInterval(poll, 1000 * 60 * 60)
 
+poll()
+
 var server = http.createServer(function (req, res) {
   try {
     read(function (value) {
@@ -21,7 +23,7 @@ var server = http.createServer(function (req, res) {
   }
 })
 
-server.listen(8080)
+// server.listen(8080)
 
 function read (cb) {
   power.output(1)
