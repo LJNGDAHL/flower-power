@@ -1,3 +1,5 @@
+'use strict'
+
 var http = require('http')
 var tessel = require('tessel')
 var notify = require('./notify')

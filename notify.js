@@ -1,3 +1,5 @@
+'use strict'
+
 var series = require('async/series')
 var tessel = require('tessel')
 var gpio = tessel.port['GPIO']
